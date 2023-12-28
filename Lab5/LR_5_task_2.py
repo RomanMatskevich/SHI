@@ -11,7 +11,7 @@ def mse_loss(y_true, y_pred):
     return ((y_true - y_pred) ** 2).mean()
 
 
-class OleksiichukNeuralNetwork:
+class MatzkevichNeuralNetwork:
     def __init__(self):
         self.w1 = np.random.normal()
         self.w2 = np.random.normal()
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         1,  # Diana
     ])
 
-    network = OleksiichukNeuralNetwork()
+    network = MatzkevichNeuralNetwork()
     network.train(data, all_y_trues)
 
     emily = np.array([-7, -3])  # 128 pounds, 63 inches
